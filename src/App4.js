@@ -6,14 +6,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">        
-        <Movie title="The Avengers" category="Action">
-          <img src="http://oi60.tinypic.com/2vjvpdg.jpg" alt="Avengers" />
+        <Movie title="Incredibles 2" description="Elastigirl springs into action">
+          <img src="http://image.tmdb.org/t/p/original/x1txcDXkcM65gl7w20PwYSxAYah.jpg" alt="Avengers" />
         </Movie>
-        <Movie title="Titanic" category="Drama">
-          <img src="http://oi39.tinypic.com/2m2uohx.jpg" alt="Titanic" />
+        <Movie title="Jurassic World" description="Volcanic eruption threatens the remaining dinosaurs">
+          <img src="http://image.tmdb.org/t/p/original/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg" alt="Titanic" />
         </Movie>
-        <Movie title="Deadpool" category="Comedy">
-          <img src="http://oi43.tinypic.com/5dru6c.jpg" alt="Deadpool" />
+        <Movie title="Thor: Ragnarok" description="Thor is on the other side of the universe">
+          <img src="http://image.tmdb.org/t/p/original/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg" alt="Deadpool" />
         </Movie>
       </div>
     );

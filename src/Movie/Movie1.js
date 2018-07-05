@@ -7,8 +7,8 @@ import React from 'react';
 const movie = () => {
     return (
         <div id="Movie">
-            <h1>This is a React Component</h1>
-            <p>Some text here</p>
+            <h1>Movie Title</h1>
+            <p>Some description here</p>
         </div>
     );
 }

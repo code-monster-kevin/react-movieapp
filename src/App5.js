@@ -11,16 +11,20 @@ class App extends Component {
     ]
   }
 
-  handleClick = () => {
-    this.setState( { movies: [
-      { title: 'Rampage', category: 'Primatologist Davis Okoye shares an unshakable bond with George, the extraordinarily intelligent, silverback gorilla who has been in his care since birth.  But a rogue genetic experiment gone awry mutates this gentle ape into a raging creature of enormous size.  To make matters worse, it’s soon discovered there are other similarly altered animals.  As these newly created alpha predators tear across North America, destroying everything in their path, Okoye teams with a discredited genetic engineer to secure an antidote, fighting his way through an ever-changing battlefield, not only to halt a global catastrophe but to save the fearsome creature that was once his friend.', image: 'http://image.tmdb.org/t/p/original/3gIO6mCd4Q4PF1tuwcyI3sjFrtI.jpg' },
-    ]})
-  }
-
   render() {
     return (
       <div className="App">
-      <button onClick={this.handleClick}>Update State</button>
+      {/*
+        <Movie title={this.state.movies[0].title} category={this.state.movies[0].category}>
+          <img src={this.state.movies[0].image} alt={this.state.movies[0].title} />
+        </Movie>
+        <Movie title="Jurassic World" description="Volcanic eruption threatens the remaining dinosaurs">
+          <img src="http://image.tmdb.org/t/p/original/c9XxwwhPHdaImA2f1WEfEsbhaFB.jpg" alt="Titanic" />
+        </Movie>
+        <Movie title="Thor: Ragnarok" description="Thor is on the other side of the universe">
+          <img src="http://image.tmdb.org/t/p/original/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg" alt="Deadpool" />
+        </Movie>
+      */}
       {this.state.movies.map((item, index) => (
         <Movie key={index} title={item.title} description={item.description}>
           <img src={item.image} alt={item.title} />

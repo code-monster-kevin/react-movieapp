@@ -7,7 +7,7 @@ const movie = (props) => {
             <div className="box">
                 {props.children}
             </div>
-            <p>{props.category}</p>
+            <p>{props.description}</p>
         </div>
     );
 }
