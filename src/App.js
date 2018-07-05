@@ -13,14 +13,24 @@ class App extends Component {
 
   handleClick = () => {
     this.setState( { movies: [
-      { title: 'Rampage', category: 'Primatologist Davis Okoye shares an unshakable bond with George, the extraordinarily intelligent, silverback gorilla who has been in his care since birth.  But a rogue genetic experiment gone awry mutates this gentle ape into a raging creature of enormous size.  To make matters worse, it’s soon discovered there are other similarly altered animals.  As these newly created alpha predators tear across North America, destroying everything in their path, Okoye teams with a discredited genetic engineer to secure an antidote, fighting his way through an ever-changing battlefield, not only to halt a global catastrophe but to save the fearsome creature that was once his friend.', image: 'http://image.tmdb.org/t/p/original/3gIO6mCd4Q4PF1tuwcyI3sjFrtI.jpg' },
+      { title: 'Rampage', description: 'Primatologist Davis Okoye shares an unshakable bond with George, the extraordinarily intelligent, silverback gorilla who has been in his care since birth.  But a rogue genetic experiment gone awry mutates this gentle ape into a raging creature of enormous size.  To make matters worse, it’s soon discovered there are other similarly altered animals.  As these newly created alpha predators tear across North America, destroying everything in their path, Okoye teams with a discredited genetic engineer to secure an antidote, fighting his way through an ever-changing battlefield, not only to halt a global catastrophe but to save the fearsome creature that was once his friend.', image: 'http://image.tmdb.org/t/p/original/3gIO6mCd4Q4PF1tuwcyI3sjFrtI.jpg' },
     ]})
   }
 
   render() {
+    const btnStyle = {
+      backgroundColor: '#ccf',
+      font: 'inherit',
+      border: '1px solid blue',
+      padding: '8px'
+    };
+
     return (
       <div className="App">
-      <button onClick={this.handleClick}>Update State</button>
+      <button
+        style={btnStyle} 
+        onClick={this.handleClick}>Update State</button>
+      <br />
       {this.state.movies.map((item, index) => (
         <Movie key={index} title={item.title} description={item.description}>
           <img src={item.image} alt={item.title} />
