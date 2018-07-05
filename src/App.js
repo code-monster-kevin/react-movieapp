@@ -25,8 +25,8 @@ class App extends Component {
           <img src="http://oi43.tinypic.com/5dru6c.jpg" alt="Deadpool" />
         </Movie>
       */}
-      {this.state.movies.map(item => (
-        <Movie title={item.title} category={item.category}>
+      {this.state.movies.map((item, index) => (
+        <Movie key={index} title={item.title} category={item.category}>
           <img src={item.image} alt={item.title} />
         </Movie>
       ))}
