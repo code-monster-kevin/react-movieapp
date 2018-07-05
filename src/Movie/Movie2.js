@@ -4,9 +4,6 @@ const movie = (props) => {
     return (
         <div id="Movie">
             <h1>{props.title}</h1>
-            <div className="box">
-                {props.children}
-            </div>
             <p>{props.category}</p>
         </div>
     );
