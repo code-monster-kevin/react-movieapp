@@ -5,7 +5,7 @@ import Movie from './Movie/Movie';
 class App extends Component {
   render() {
     return (
-      <div className="App">        
+      <div className="App">
         <Movie />
         <Movie />
         <Movie />

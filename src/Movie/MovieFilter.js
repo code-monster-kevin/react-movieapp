@@ -1,10 +1,6 @@
 import React from 'react';
 
-// Black Panther
-// King T'Challa returns home from America to the reclusive, technologically advanced African nation of Wakanda
-// http://image.tmdb.org/t/p/original/uxzzxijgPIY7slzFvMotPv8wjKA.jpg
-
-class MovieForm extends React.Component {
+class MovieFilter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -76,4 +72,4 @@ class MovieForm extends React.Component {
   }
 }
 
-export default MovieForm;
+export default MovieFilter;

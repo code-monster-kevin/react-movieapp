@@ -5,12 +5,12 @@ import React from 'react';
 
 //es6 syntax
 const movie = () => {
-    return (
-        <div id="Movie">
-            <h1>Movie Title</h1>
-            <p>Some description here</p>
-        </div>
-    );
-}
+  return (
+    <div id="Movie">
+      <h1>Movie Title</h1>
+      <p>Some description here</p>
+    </div>
+  );
+};
 
 export default movie;
