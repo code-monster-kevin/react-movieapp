@@ -6,9 +6,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">        
-        <Movie title="The Avengers" category="Action" />
-        <Movie title="Titanic" category="Drama" />
-        <Movie title="Deadpool" category="Comedy" />
+        <Movie />
+        <Movie />
+        <Movie />
       </div>
     );
   }

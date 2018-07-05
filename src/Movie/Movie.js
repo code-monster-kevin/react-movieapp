@@ -1,14 +1,10 @@
 import React from 'react';
 
-//javascript: function movie() { return <...> }
-//es5: var movie = function() { return <...> }
-
-//es6 syntax
-const movie = () => {
+const movie = (props) => {
     return (
         <div id="Movie">
-            <h1>This is a React Component</h1>
-            <p>Some text here</p>
+            <h1>{props.title}</h1>
+            <p>{props.category}</p>
         </div>
     );
 }
